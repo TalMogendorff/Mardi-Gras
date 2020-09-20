@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(#3F134E, #a275b1);
+    width: 100%;
+    height: 100vh;
+}
+
+
+.navi {
+    background-color: rgb(73, 221, 86);
+    font-size: 1.8rem;
+    border: 2px solid #ffd500;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    box-shadow: 3px 15px 15px rgba(54, 47, 47, 0.315);
+    padding: 5px;
+    padding-bottom: 0;
+    position: relative;
+
+}
+
+.navi:hover:hover {
+    box-shadow: 5px 15px 10px rgba(0, 0, 0, .6);
+    transform: scale(1.1);
+}
+
+.navtab {
+    margin-right: 300px;
+}
+
+.iconnav:hover {
+
+    transform: scale(1.1);
+}
+
+.sectionboxmid {
+    width: 1400px;
+    height: 650px;
+
+    margin-top: 60px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15% 35% 50%;
+    grid-gap: 5px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, .8);
+    z-index: 10;
+
+
+}
+
+.textdec {
+    display: block;
+    font-size: 1.2rem;
+    background: linear-gradient(#51f01d, #edf518);
+    border-radius: 15px;
+    text-align: center;
+    padding: 6px;
+
+}
+
+.fwarp {
+    grid-row: 2/4;
+    grid-column: 1/2;
+    font-family: 'Pattaya';
+}
+
+.gmap {
+    width: 100%;
+    padding: 25px;
+}
+
+.textwarp {
+    font-family: 'Pattaya';
+    background: linear-gradient(#51f01d, #edf518);
+    grid-column: 1/3;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+
+
+.ftext {
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+}
+
+.bwarp {
+    text-align: center;
+}
+
+.bw {
+    width: 18%;
+
+}
+
+.mardiplace {
+
+    display: none;
+}
+
+.weather {
+    background: linear-gradient(#51f01d, #edf518);
+    margin: 0 auto;
+    grid-row: 2/3;
+    width: 216px;
+    height: 200px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(177, 113, 236);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.footericon {
+    font-size: 36px;
+
+}
+
+.fid {
+    text-decoration: none;
+    color: white;
+}
+
+.fid:hover {
+    color: rgb(206, 206, 206);
+}
+
+@media screen and (max-width:768px) {
+    .navi {
+        text-align: center;
+    }
+
+    .navb {
+        text-align: center;
+    }
+
+    .sectionboxmid {
+        margin-top: 50px;
+        width: 100vw;
+        height: 130vh;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(7, auto);
+
+    }
+
+    .baloo {
+        display: none;
+    }
+
+    .mardiplace {
+        text-align-last: center;
+        text-align: center;
+        display: block;
+    }
+
+    .fwarp {
+        margin: 0 auto;
+        grid-row: 2/3;
+
+    }
+
+    .textwarp {
+        font-size: 4rem;
+        width: 100vw;
+        height: 12vh;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .weather {
+        margin-top: 5%;
+        text-align: center;
+        grid-row: 3/4;
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .weatherifr {
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .textdec {
+        display: none;
+    }
+
+    .gmap {
+        margin: 0 auto;
+        grid-row: 4/5;
+        height: 100%;
+    }
+
+    .ftext {
+        text-align: center;
+        width: 100vw;
+        height: 7vh;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navtab {
+        margin-right: 0;
+    }
+
+
+
+    .sectionboxmid {
+
+        width: 100vw;
+        height: 160vh;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(9, auto);
+    }
+
+    .textwarp {
+        font-size: 3rem;
+    }
+
+    .fwarp {
+        margin: 0 auto;
+        grid-row: 2/3;
+        width: 100%
+    }
+
+    .weather {
+        margin-bottom: 2%;
+        text-align: center;
+        grid-row: 3/4;
+        width: 100%;
+        height: 30vh;
+
+    }
+
+
+
+    .weatherifr {
+        height: 100%;
+    }
+
+    .gmap {
+        margin: 0 auto;
+        grid-row: 4/5;
+        height: 100%;
+        width: 100%;
+    }
+
+
+
+    .bw {
+        margin: 0 auto;
+        width: 100%;
+    }
+}

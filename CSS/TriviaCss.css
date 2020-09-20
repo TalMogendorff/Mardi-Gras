@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(#3F134E, #a275b1);
+    width: 100%;
+    height: 100vh;
+}
+
+
+.navi {
+    background-color: rgb(73, 221, 86);
+    font-size: 1.8rem;
+    border: 2px solid #ffd500;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 35px;
+    box-shadow: 3px 15px 15px rgba(54, 47, 47, 0.315);
+    padding: 5px;
+    padding-bottom: 0;
+    position: relative;
+
+}
+
+.navi:hover:hover {
+    box-shadow: 5px 15px 10px rgba(0, 0, 0, .6);
+    transform: scale(1.1);
+}
+
+
+
+.iconnav:hover {
+
+    transform: scale(1.1);
+}
+
+.triviacont {
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.triviadiv {
+    background: linear-gradient(#51f01d, #edf518);
+    font-size: 1.8rem;
+    border: 2px solid #ffd500;
+    box-sizing: border-box;
+    border-radius: 35px;
+    box-shadow: 3px 15px 15px rgba(54, 47, 47, 0.315);
+    padding: 5px;
+    padding-bottom: 0;
+    position: relative;
+    top: 85px;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.triviap {
+    color: rgb(248, 248, 78);
+    text-shadow: 2px 2px 5px rgb(160, 9, 247);
+    text-align: center;
+    font-size: 6rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: rgb(177, 113, 236);
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.footericon {
+    font-size: 36px;
+
+}
+
+.fid {
+    text-decoration: none;
+    color: white;
+}
+
+.fid:hover {
+    color: rgb(206, 206, 206);
+}
+
+@media screen and (max-width:768px) {
+    .navi {
+        text-align: center;
+    }
+
+    .triviadiv {
+        width: 100%;
+        top: 260px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .navtab {
+        margin-right: 0;
+    }
+
+    .triviadiv {
+        width: 100%;
+        top: 190px;
+
+    }
+
+    .triviap {
+        font-size: 3.5rem;
+    }
+}

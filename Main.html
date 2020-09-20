@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <title>Main Page</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Fjalla One', sans-serif;
+        }
+
+        .header {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            background-color: #fae88e;
+            position: absolute;
+            z-index: 90;
+            width: 100%;
+
+        }
+
+        .nav {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            justify-items: stretch;
+            align-items: stretch;
+            text-align: center;
+            grid-column: 2/6;
+            height: 100%;
+            margin: 0;
+            font-size: 20px;
+
+        }
+
+        .nav-p {
+            padding: 20px;
+            border: 0.8px solid rgb(180, 180, 180);
+            margin: 1px;
+            border-radius: 15px;
+            color: cornsilk;
+            text-shadow: 0.5px 0.5px black;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            z-index: 30;
+        }
+
+        .nav-p:hover {
+            box-shadow: 0.2px 0.2px 8px 4px whitesmoke;
+        }
+
+        .green-nav {
+            background-color: #94cc41;
+            transition: background-color 0.3s ease-out;
+
+        }
+
+        .green-nav:hover {
+            font-size: 23px;
+            background-color: #91dd20;
+
+            font-weight: bold;
+            text-shadow: 1px 2px black;
+        }
+
+        .purple-nav {
+            background-color: #9453A6;
+            transition: background-color 0.3s ease-out;
+        }
+
+        .purple-nav:hover {
+            font-size: 23px;
+            background-color: #b776c9;
+
+            font-weight: bold;
+            text-shadow: 1px 2px black;
+
+        }
+
+        .yellow-nav {
+            background-color: #eecb1d;
+            transition: background-color 0.3s ease-out;
+
+        }
+
+        .yellow-nav:hover {
+            font-size: 23px;
+            background-color: #ffe355;
+
+            font-weight: bold;
+            text-shadow: 1px 2px black;
+        }
+
+        .mainIntro {
+            grid-column: 2/6;
+
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <ul class="nav">
+                <li class="green-nav nav-p">Main</li>
+                <li class="purple-nav nav-p">About</li>
+                <li class="yellow-nav nav-p">Media</li>
+                <li class="green-nav nav-p">FAQ</li>
+                <li class="yellow-nav nav-p">Contact US</li>
+                <li class="purple-nav nav-p">Trivia</li>
+
+            </ul>
+            <br>
+            <br>
+            <div class="mainIntro">
+                <img src="MainIntro.png" alt="Horses main" title="Carnaval people on horses">
+            </div>
+        </header>
+        <div class="content">
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+
+</html>
